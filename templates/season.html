@@ -33,10 +33,12 @@
             padding: 10px; /* Add some padding around the item */
             border-radius: 8px; /* Optional: Round the corners */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .season-item img {
             width: 100%;
-            max-width: 300px; /* Adjust as needed */
             aspect-ratio: 2/3;
             object-fit: cover; /* Ensures the image covers the area */
             background-color: #ddd; /* Placeholder color */
@@ -44,10 +46,10 @@
         .season-item a {
             text-decoration: none;
             color: #3498db;
-            display: block;
+            display: flex;
+            flex-direction: column;
             margin-top: 10px;
             font-size: 1rem;
-            max-width: 300px; /* Adjust to match the image size */
             white-space: normal; /* Allow text to wrap */
             overflow: visible; /* Ensure all text is visible */
             text-overflow: clip; /* Prevent text truncation */

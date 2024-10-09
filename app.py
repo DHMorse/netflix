@@ -5,9 +5,9 @@ from flask import Flask, render_template, send_from_directory
 app = Flask(__name__)
 
 # Replace this with the path to your TV shows root directory
-#TV_SHOWS_DIR = r'/home/daniel/Documents/USB128_copy/TV'
+TV_SHOWS_DIR = r'F:\\home/daniel/Documents/USB128_copy/TV'
 
-TV_SHOWS_DIR = r'F:\\'
+#TV_SHOWS_DIR = r'D:\TV'
 
 def sort_episodes(episode):
     match = re.search(r'^\((\d+)\)', episode)
